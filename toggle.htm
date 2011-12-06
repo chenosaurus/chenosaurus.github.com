@@ -133,10 +133,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', e
       transition: left .2s;
     }
 
+    .toggle .handle .center {
+      position: absolute;
+      height: 6px;
+      width: 6px;
+      top: 5px;
+      left: 5px;
+      border-radius: 3px;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .95),
+                  inset 0 1px 0 rgba(0, 0, 0, .2);
+    }
+
     .toggle.on .handle {
       left: 33px;
     }
-
   </style>
 
 </head>
@@ -146,14 +156,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', e
 
   <div class="broadcast-control grad3">
     <div class="toggle toggleBg" onclick="$(this).toggleClass('on');">
-      <div class="handle grad2"></div>
+      <div class="handle grad2">
+        <div class="center grad3"></div>
+      </div>
     </div>
     <div class="light"></div>
   </div>
 
    <div class="broadcast-control grad3">
     <div class="toggle toggleBg" onclick="$(this).toggleClass('on');">
-      <div class="handle grad2"></div>
+      <div class="handle grad2">
+        <div class="center grad3"></div>
+      </div>
     </div>
     <div class="light"></div>
   </div>

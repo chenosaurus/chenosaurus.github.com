@@ -52,6 +52,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 
     }
 
+    .grad3 {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.2) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0.2)));
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.2) 100%);
+background: -o-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.2) 100%);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.2) 100%);
+background: linear-gradient(top,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#33000000',GradientType=0 );
+
+    }
+    .broadcast-control {
+      position: relative;
+      height: 36px;
+      width: 95px;
+      border-radius: 18px;
+      box-shadow: 0 -1px 0 rgba(255, 255, 255, .1),
+                  0 1px 0 rgba(0, 0, 0, .35);
+    }
+
+    .broadcast-control .light {
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      top: 12px;
+      right: 12px;
+      background: #ccc;
+      border-radius: 6px;
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, .3),
+                  0 1px 0 rgba(255, 255, 255, .2),
+                  inset 0 1px 5px rgba(0, 0, 0, .3);
+      -webkit-transition: background 1s;
+      -moz-transition: background 1s;
+      transition: background 1s;
+    }
+
+    .broadcast-control .toggle.on + .light { 
+      background: #20e000;
+    }
+
     .toggle {
       position: relative;
       height: 18px;
@@ -63,11 +102,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
       cursor: pointer;
     }
 
-
-    .toggle {
+    .broadcast-control {
       position: absolute;
       top: 50%;
       left: 50%;
+    }
+
+    .broadcast-control .toggle {
+      position: absolute;
+      top: 8px;
+      left: 8px;
     }
 
     .toggle .handle {
@@ -93,9 +137,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 
 </head>
 <body>
-
-  <div class="toggle toggleBg" onclick="$(this).toggleClass('on');">
-    <div class="handle grad2"></div>
+  
+  <div class="broadcast-control grad3">
+    <div class="toggle toggleBg" onclick="$(this).toggleClass('on');">
+      <div class="handle grad2"></div>
+    </div>
+    <div class="light"></div>
   </div>
 
 </body>

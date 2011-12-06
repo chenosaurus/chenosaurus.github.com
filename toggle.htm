@@ -81,14 +81,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
                   inset 0 -1px 0 rgba(0, 0, 0, .2);
     }
 
+    .toggle.on .handle {
+      left: auto;
+      right: 1px;
+    }
+
   </style>
 
 </head>
 <body>
 
-  <div class="toggle toggleBg">
+  <div class="toggle toggleBg" onclick="$(this).toggleClass('on');">
     <div class="handle grad2"></div>
   </div>
 
 </body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </html>

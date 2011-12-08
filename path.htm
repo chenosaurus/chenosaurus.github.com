@@ -10,105 +10,161 @@
         width: 100%;
       }
       body {
+        font-family: "helvetica neue";
         margin: 0;
         padding: 0;
+        background: #606c88;
+background: -moz-radial-gradient(center, ellipse cover,  #606c88 0%, #3f4c6b 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#606c88), color-stop(100%,#3f4c6b));
+background: -webkit-radial-gradient(center, ellipse cover,  #606c88 0%,#3f4c6b 100%);
+background: -o-radial-gradient(center, ellipse cover,  #606c88 0%,#3f4c6b 100%);
+background: -ms-radial-gradient(center, ellipse cover,  #606c88 0%,#3f4c6b 100%);
+background: radial-gradient(center, ellipse cover,  #606c88 0%,#3f4c6b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 );
+
       }
-      @-webkit-keyframes spin {
-        from {
-          -webkit-transform:rotate(0deg);
+
+      @-webkit-keyframes close1 {
+        0% {
+          -webkit-transform: translate3d(200px, 0, 0) rotateZ(0deg);
         }
-        to {
-          -webkit-transform:rotate(360deg);
+        80% {
+          -webkit-transform: translate3d(200px, 0, 0) rotateZ(540deg);
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(720deg);
         }
       }
 
       @-webkit-keyframes open1 {
         0% {
-          left: 0;
-          bottom: 0;
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg);
         }
         80% {
-          left: 220px;
-          bottom: 0;
+          -webkit-transform: translate3d(220px, 0, 0) rotateZ(288deg);
         }
         100% {
-          left: 200px;
-          bottom: 0;
+          -webkit-transform: translate3d(200px, 0, 0) rotateZ(360deg);
+        }
+      }
+
+      @-webkit-keyframes close2 {
+        0% {
+          -webkit-transform: translate3d(190px, -62px, 0) rotateZ(0deg);
+        }
+        80% {
+          -webkit-transform: translate3d(190px, -62px, 0) rotateZ(540deg);
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(720deg);
         }
       }
 
       @-webkit-keyframes open2 {
         0% {
-          left: 0;
-          bottom: 0;
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg);
         }
         80% {
-          left: 209px;
-          bottom: 68px;
+          -webkit-transform: translate3d(209px, -68px, 0) rotateZ(288deg);
         }
         100% {
-          left: 190px;
-          bottom: 62px;
+          -webkit-transform: translate3d(190px, -62px, 0) rotateZ(360deg);
+        }
+      }
+
+      @-webkit-keyframes close3 {
+        0% {
+          -webkit-transform: translate3d(162px, -118px, 0) rotateZ(0deg);
+        }
+        80% {
+          -webkit-transform: translate3d(162px, -118px, 0) rotateZ(540deg);
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(720deg);
         }
       }
 
       @-webkit-keyframes open3 {
         0% {
-          left: 0;
-          bottom: 0;
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg);
         }
         80% {
-          left: 178px;
-          bottom: 129px;
+          -webkit-transform: translate3d(178px, -129px, 0) rotateZ(288deg);
         }
         100% {
-          left: 162px;
-          bottom: 118px;
+          -webkit-transform: translate3d(162px, -118px, 0) rotateZ(360deg);
+        }
+      }
+
+      @-webkit-keyframes close4 {
+        0% {
+          -webkit-transform: translate3d(118px, -162px, 0) rotateZ(0deg);
+        }
+        80% {
+          -webkit-transform: translate3d(118px, -162px, 0) rotateZ(540deg);
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(720deg);
         }
       }
 
       @-webkit-keyframes open4 {
         0% {
-          left: 0;
-          bottom: 0;
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg);
         }
         80% {
-          left: 129px;
-          bottom: 178px;
+          -webkit-transform: translate3d(129px, -178px, 0) rotateZ(288deg);
         }
         100% {
-          left: 118px;
-          bottom: 162px;
+          -webkit-transform: translate3d(118px, -162px, 0) rotateZ(360deg);
+        }
+      }
+
+      @-webkit-keyframes close5 {
+        0% {
+          -webkit-transform: translate3d(62px, -190px, 0) rotateZ(0deg);
+        }
+        80% {
+          -webkit-transform: translate3d(62px, -190px, 0) rotateZ(540deg);
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(720deg);
         }
       }
 
       @-webkit-keyframes open5 {
         0% {
-          left: 0;
-          bottom: 0;
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg);
         }
         80% {
-          left: 68px;
-          bottom: 209px;
+          -webkit-transform: translate3d(68px, -209px, 0) rotateZ(288deg);
         }
         100% {
-          left: 62px;
-          bottom: 190px;
+          -webkit-transform: translate3d(62px, -190px, 0) rotateZ(360deg);
+        }
+      }
+
+      @-webkit-keyframes close6 {
+        0% {
+          -webkit-transform: translate3d(0, -200px, 0) rotateZ(0deg);
+        }
+        80% {
+          -webkit-transform: translate3d(0, -200px, 0) rotateZ(540deg);
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(720deg);
         }
       }
 
       @-webkit-keyframes open6 {
         0% {
-          left: 0;
-          bottom: 0;
+          -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg);
         }
         80% {
-          left: 0;
-          bottom: 220px;
+          -webkit-transform: translate3d(0, -220px, 0) rotateZ(288deg);
         }
         100% {
-          left: 0;
-          bottom: 200px;
+          -webkit-transform: translate3d(0, -200px, 0) rotateZ(360deg);
         }
       }
 
@@ -126,6 +182,13 @@
         left: -4px;
         height: 38px;
         width: 38px;
+        line-height: 28px;
+        text-align: center;
+        text-shadow: 0 0 3px rgba(0, 0, 0, .3);
+        cursor: pointer;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 600;
         border: 3px solid #fff;
         border-radius: 22px;
         background: #db0300;
@@ -155,48 +218,71 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0300', end
         border: 3px solid #fff;
         color: #fff;
         text-shadow: 0 0 3px rgba(0, 0, 0, .3);
-        background: #333;
+        background: #222;
         box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .3),
           inset 0 1px 1px rgba(0, 0, 0, .3),
           0 0 5px rgba(0, 0, 0, .6);
         -webkit-animation-duration: .6s;
         -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        -webkit-transform-style: preserve-3d;
         -webkit-animation-timing-function: ease-in-out;
       }
 
+      .action.close {
+        -webkit-animation-duration: 1s;
+      }
+      .action1.close {
+        -webkit-animation-name: close1;
+      }
+
+      .action2.close {
+        -webkit-animation-name: close2;
+      }
+
+      .action3.close {
+        -webkit-animation-name: close3;
+      }
+
+      .action4.close {
+        -webkit-animation-name: close4;
+      }
+
+      .action5.close {
+        -webkit-animation-name: close5;
+      }
+
+      .action6.close {
+        -webkit-animation-name: close6;
+      }
+
       .action1.open {
-        -webkit-animation-name: open1, spin;
-        left: 200px;
+        -webkit-animation-name: open1;
       }
 
       .action2.open {
-        -webkit-animation-name: open2, spin;
-        left: 190px;
-        bottom: 62px;
+        -webkit-animation-delay: .05s;
+        -webkit-animation-name: open2;
       }
 
       .action3.open {
-        -webkit-animation-name: open3, spin;
-        left: 162px;
-        bottom: 118px;
+        -webkit-animation-delay: .1s;
+        -webkit-animation-name: open3;
       }
 
       .action4.open {
-        -webkit-animation-name: open4, spin;
-        left: 118px;
-        bottom: 162px;
+        -webkit-animation-delay: .15s;
+        -webkit-animation-name: open4;
       }
 
       .action5.open {
-        -webkit-animation-name: open5, spin;
-        left: 62px;
-        bottom: 190px;
+        -webkit-animation-delay: .2s;
+        -webkit-animation-name: open5;
       }
 
       .action6.open {
-        -webkit-animation-name: open6, spin;
-        left: 0;
-        bottom: 200px;
+        -webkit-animation-delay: .25s;
+        -webkit-animation-name: open6;
       }
 
 
@@ -215,30 +301,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0300', end
     <div class="action action4">&#9992;</div>
     <div class="action action5">&#9992;</div>
     <div class="action action6">&#9992;</div>
-    <div class="control"></div>
+    <div class="control">+</div>
     </div>
 
   </body>
 
   <script type="text/javascript">
+  function toggle(el) {
+    if ($(el).hasClass("open")) {
+      $(el).removeClass("open").addClass("close");
+    } else {
+      $(el).removeClass("close").addClass("open");
+    }
+  }
+
   $(".control").bind("click", function(e) {
     e.preventDefault();
-    $(".action1").addClass("open");
-    setTimeout(function() {
-      $(".action2").addClass("open");
-    }, 20);
-    setTimeout(function() {
-      $(".action3").addClass("open");
-    }, 40);
-    setTimeout(function() {
-      $(".action4").addClass("open");
-    }, 60);
-    setTimeout(function() {
-      $(".action5").addClass("open");
-    }, 80);
-    setTimeout(function() {
-      $(".action6").addClass("open");
-    }, 100);
+    toggle(".action");
   });
 
   </script>

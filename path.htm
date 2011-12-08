@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <style type="text/css">
+
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      @-webkit-keyframes spin {
+        from {
+          -webkit-transform:rotate(0deg);
+        }
+        to {
+          -webkit-transform:rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes open1 {
+        0% {
+          left: 0;
+          bottom: 0;
+        }
+        80% {
+          left: 220px;
+          bottom: 0;
+        }
+        100% {
+          left: 200px;
+          bottom: 0;
+        }
+      }
+
+      @-webkit-keyframes open2 {
+        0% {
+          left: 0;
+          bottom: 0;
+        }
+        80% {
+          left: 209px;
+          bottom: 68px;
+        }
+        100% {
+          left: 190px;
+          bottom: 62px;
+        }
+      }
+
+      @-webkit-keyframes open3 {
+        0% {
+          left: 0;
+          bottom: 0;
+        }
+        80% {
+          left: 178px;
+          bottom: 129px;
+        }
+        100% {
+          left: 162px;
+          bottom: 118px;
+        }
+      }
+
+      @-webkit-keyframes open4 {
+        0% {
+          left: 0;
+          bottom: 0;
+        }
+        80% {
+          left: 129px;
+          bottom: 178px;
+        }
+        100% {
+          left: 118px;
+          bottom: 162px;
+        }
+      }
+
+      @-webkit-keyframes open5 {
+        0% {
+          left: 0;
+          bottom: 0;
+        }
+        80% {
+          left: 68px;
+          bottom: 209px;
+        }
+        100% {
+          left: 62px;
+          bottom: 190px;
+        }
+      }
+
+      @-webkit-keyframes open6 {
+        0% {
+          left: 0;
+          bottom: 0;
+        }
+        80% {
+          left: 0;
+          bottom: 220px;
+        }
+        100% {
+          left: 0;
+          bottom: 200px;
+        }
+      }
+
+      .container {
+        position: relative;
+        left: 200px;
+        top: 100px;
+        height: 500px;
+        width: 500px;
+      }
+
+      .control {
+        position: absolute;
+        bottom: -4px;
+        left: -4px;
+        height: 38px;
+        width: 38px;
+        border: 3px solid #fff;
+        border-radius: 22px;
+        background: #db0300;
+background: -moz-linear-gradient(top,  #db0300 0%, #b70300 50%, #9e0200 51%, #9b0200 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db0300), color-stop(50%,#b70300), color-stop(51%,#9e0200), color-stop(100%,#9b0200));
+background: -webkit-linear-gradient(top,  #db0300 0%,#b70300 50%,#9e0200 51%,#9b0200 100%);
+background: -o-linear-gradient(top,  #db0300 0%,#b70300 50%,#9e0200 51%,#9b0200 100%);
+background: -ms-linear-gradient(top,  #db0300 0%,#b70300 50%,#9e0200 51%,#9b0200 100%);
+background: linear-gradient(top,  #db0300 0%,#b70300 50%,#9e0200 51%,#9b0200 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0300', endColorstr='#9b0200',GradientType=0 );
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .3),
+          inset 0 1px 1px rgba(0, 0, 0, .3),
+          0 0 5px rgba(0, 0, 0, .6);
+      }
+
+      .action {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        border: 2px solid rgba(0, 0, 0, .5);
+        border-radius: 18px;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        border: 3px solid #fff;
+        color: #fff;
+        text-shadow: 0 0 3px rgba(0, 0, 0, .3);
+        background: #333;
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .3),
+          inset 0 1px 1px rgba(0, 0, 0, .3),
+          0 0 5px rgba(0, 0, 0, .6);
+        -webkit-animation-duration: .6s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in-out;
+      }
+
+      .action1.open {
+        -webkit-animation-name: open1, spin;
+        left: 200px;
+      }
+
+      .action2.open {
+        -webkit-animation-name: open2, spin;
+        left: 190px;
+        bottom: 62px;
+      }
+
+      .action3.open {
+        -webkit-animation-name: open3, spin;
+        left: 162px;
+        bottom: 118px;
+      }
+
+      .action4.open {
+        -webkit-animation-name: open4, spin;
+        left: 118px;
+        bottom: 162px;
+      }
+
+      .action5.open {
+        -webkit-animation-name: open5, spin;
+        left: 62px;
+        bottom: 190px;
+      }
+
+      .action6.open {
+        -webkit-animation-name: open6, spin;
+        left: 0;
+        bottom: 200px;
+      }
+
+
+    </style>
+
+    <script type="text/javascript">
+
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="action action1">&#9992;</div>
+    <div class="action action2">&#9992;</div>
+    <div class="action action3">&#9992;</div>
+    <div class="action action4">&#9992;</div>
+    <div class="action action5">&#9992;</div>
+    <div class="action action6">&#9992;</div>
+    <div class="control"></div>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+  $(".control").bind("click", function(e) {
+    e.preventDefault();
+    $(".action1").addClass("open");
+    setTimeout(function() {
+      $(".action2").addClass("open");
+    }, 20);
+    setTimeout(function() {
+      $(".action3").addClass("open");
+    }, 40);
+    setTimeout(function() {
+      $(".action4").addClass("open");
+    }, 60);
+    setTimeout(function() {
+      $(".action5").addClass("open");
+    }, 80);
+    setTimeout(function() {
+      $(".action6").addClass("open");
+    }, 100);
+  });
+
+  </script>
+</html>

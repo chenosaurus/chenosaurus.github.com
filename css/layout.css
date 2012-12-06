@@ -1,0 +1,145 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 800px;
+  background: url(/images/grid.png);
+  font-family: brandon-grotesque, helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.body-content {
+  position: relative;
+  width: 1020px;
+  min-height: 1000px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.header .logo {
+  position: relative;
+  float: left;
+  height: 32px;
+  width: 32px;
+  margin: 9px 9px 9px 20px;
+}
+
+.header .title {
+  position: relative;
+  float: left;
+  margin: 9px 0;
+  line-height: 32px;
+  font-size: 26px;
+  color: #555;
+}
+
+.header .nav {
+  position: relative;
+  float: right;
+  margin: 9px 20px 9px 0;
+}
+
+.header .nav .nav-item {
+  position: relative;
+  float: right;
+  margin-left: 15px;
+  line-height: 32px;
+  font-size: 18px;
+  color: #888;
+}
+
+/* contents */
+.contents {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.contents .item {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 300px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 10px;
+  background: #f1f1f1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  font-family: ff-tisa-web-pro, georgia;
+}
+
+.contents .item .item-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  height: 20px;
+  line-height: 20px;
+  background: rgba(0, 0, 0, .7);
+  color: #ddd;
+  font-size: 16px;
+}
+
+.contents .item.span2 {
+  width: 620px;
+}
+
+.contents .item .item-pic {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  overflow: hidden;
+  top: 9px;
+  left: 9px;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.contents .item .item-pic img {
+  position: absolute;
+  height: 280px;
+  width: 560px;
+  left: -140px;
+}
+
+.contents .item.span2 .item-pic {
+  width: 600px;
+}
+
+.contents .item.span2 .item-pic img {
+  width: 600px;
+  height: 300px;
+  left: 0;
+  top: -10px;
+}
+
+.contents .item.full {
+  width: 940px;
+  min-height: 480px;
+}
+
+.contents .item.full .item-pic {
+  width: 920px;
+  height: 460px;
+}
+
+.contents .item.full .item-pic img {
+  width: 920px;
+  height: 460px;
+  left: 0;
+  top: 0;
+}
+
+.contents .item.full .item-title {
+  height: 30px;
+  line-height: 30px;
+  padding: 20px;
+  font-size: 26px;
+}

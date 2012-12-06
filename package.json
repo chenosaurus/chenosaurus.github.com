@@ -1,0 +1,12 @@
+{
+  "name": "chenosaurus.com",
+  "description": "chenosaurus.com",
+  "author": "David Chen <chenosaurus@gmail.com>",
+  "version": "0.1",
+  "dependencies": {
+    "wheat": "0.2.6"
+  },
+  "devDependencies": {
+  },
+  "engine": "node >= 0.6.1",
+}

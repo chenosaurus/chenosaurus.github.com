@@ -2,11 +2,12 @@
   "name": "chenosaurus.com",
   "description": "chenosaurus.com",
   "author": "David Chen <chenosaurus@gmail.com>",
-  "version": "0.1",
+  "version": "0.1.0",
   "dependencies": {
-    "wheat": "0.2.6"
+    "wheat": "0.2.6",
+    "express": "3.0.x"
   },
   "devDependencies": {
   },
-  "engine": "node >= 0.6.1",
+  "engine": "node >= 0.6"
 }

@@ -4,7 +4,9 @@
   "author": "David Chen <chenosaurus@gmail.com>",
   "version": "0.1.0",
   "dependencies": {
-    "wheat": "0.2.6",
+    "showdown": "0.3.1",
+    "hogan.js": "2.0.0",
+    "async": "0.1.22",
     "express": "3.0.x"
   },
   "devDependencies": {

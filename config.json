@@ -1,0 +1,13 @@
+{
+  "about": {
+    "site": "chenosaurus.com",
+    "author": "David Chen",
+    "email": "chenosaurus@gmail.com"
+  },
+  "files": {
+    "templates": "/templates",
+    "data": "/data",
+    "articles": "/articles"
+  }
+  
+}

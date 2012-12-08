@@ -1,5 +1,6 @@
 var Showdown = require("showdown");
 var utils = require("./lib/utils.js");
+var templates = require("./lib/templates.js");
 var async = require("async");
 
 var config = {};
@@ -48,10 +49,13 @@ function(err, res) {
 
 async.waterfall([
   function(cb) {
-    utils.ls("./data", cb);
+    utils.ls("./templates", cb);
   },
   function(filenames, cb) {
-    utils.md5Files(filenames, cb);
+    utils.readMulti(filenames, cb);
+  },
+  function(files, cb) {
+    templates.compile(files, cb);
   }
   //  utils.readMulti
 ], function(err, res) {
